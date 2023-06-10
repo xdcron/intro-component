@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img//favicon-32x32.png" type="img/x-favicon-32x32.png">
+
+    <script defer src="script.js"></script>
+    <title>intro component with signup form master</title>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+
+    <div class="split-section">
+        <div class="trial">
+            <a href="/"><span>Try it free 7 days</span> then $20/mo. thereafter.</a>
+        </div>
+        <div class="form-container">
+            <form id="Form"  action="/" autocomplete="on" class="js-form">
+
+                <div class="input">
+                    <input  type="text" placeholder="First Name"  class="input-style js-firstname"  onclick="
+                        removeError('.js-firstname',error1);
+                        ">
+                    <div class="error1"></div>
+                </div>
+
+                <div class="input">
+                    <input type="text" placeholder="Last Name" class="input-style js-lastname" onclick="
+                    removeError('.js-lastname',error2);
+                    ">
+                    <div class="error2"></div>
+                </div>
+
+                <div class="input">
+                    <input type="text" placeholder="Email Address" class="input-style js-email" onclick="
+                    removeError('.js-email',error3);
+                    ">
+                    <div class="error3"></div>
+                </div>
+
+                <div class="input">
+                    <input  type="password" placeholder="Password" class="input-style js-password" onclick="
+                    removeError('.js-password',error4);
+                    ">
+                    <div class="error4"></div>
+                </div>
+
+               <button type="submit">claim your free trial</button>
+
+            </form>
+
+             <p class="conditions">By clicking the button, you are agreeing to our <a href="/">Terms and Services</a></p>
+
+        </div>
+    </div>
+    </main>
+</body>
+</html>
